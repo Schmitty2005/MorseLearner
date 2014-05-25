@@ -1,0 +1,682 @@
+cscope 15 /cygdrive/c/CppCode/MorseLearner/MorseLearner/.codelite               0000003796
+	@..\main.cpp
+
+44 
+	~<°dio.h
+>
+
+45 
+	~<m©h.h
+>
+
+46 
+	~"p‹èudio.h
+"
+
+48 
+	#NUM_SECONDS
+ (5)
+
+	)
+
+49 
+	#SAMPLE_RATE
+ (44100)
+
+	)
+
+50 
+	#FRAMES_PER_BUFFER
+ (64)
+
+	)
+
+51 
+	#pi
+ 3.1415
+
+	)
+
+52 #i‚de‡
+M_PI
+
+
+53 
+	#M_PI
+ (3.14159265)
+
+	)
+
+56 
+	#TABLE_SIZE
+ (200)
+
+	)
+
+57 
+	g‰eqc
+=600.00;
+
+59 
+	gdô_•a˚
+=400;
+
+60 
+	gdah_•a˚
+=(2 * 
+dô_•a˚
+);
+
+61 
+	gw‹d_•a˚
+=(7 * 
+dô_•a˚
+);
+
+62 
+	gÀâî_•a˚
+=(3 * 
+dô_•a˚
+);
+
+64 
+	gbegö_ømp
+=100.00 ;
+
+65 
+	gíd_ømp
+=100.00;
+
+67 
+	g¶i˚_vÆue
+ = 0;
+
+68 c⁄° 
+	gsw_duøti⁄_Àngth
+ =((
+dô_•a˚
+ / 1000)*(
+‰eqc
+));
+
+69 
+	gadju°_amp
+ = 0;
+
+72 
+	msöe
+[320];
+
+73 
+	mÀ·_pha£
+;
+
+74 
+	mright_pha£
+;
+
+75 
+	mmesßge
+[20];
+
+77 
+	t∑Te°D©a
+;
+
+83 
+	$∑ã°CÆlback
+–c⁄° *
+öputBuf„r
+, *
+ouçutBuf„r
+,
+
+84 
+‰amesPîBuf„r
+,
+
+85 c⁄° 
+PaSåómCÆlbackTimeInfo
+* 
+timeInfo
+,
+
+86 
+PaSåómCÆlbackFœgs
+ 
+°©usFœgs
+,
+
+87 *
+u£rD©a
+ )
+
+89 
+∑Te°D©a
+ *
+d©a
+ = (∑Te°D©a*)
+u£rD©a
+;
+
+90 *
+out
+ = (*)
+ouçutBuf„r
+;
+
+91 
+i
+;
+
+93 (Ë
+timeInfo
+;
+
+94 (Ë
+°©usFœgs
+;
+
+95 (Ë
+öputBuf„r
+;
+
+97  
+i
+=0; i<
+‰amesPîBuf„r
+; i++ )
+
+99 *
+out
+++ = 
+d©a
+->
+söe
+[d©a->
+À·_pha£
+];
+
+100 *
+out
+++ = 
+d©a
+->
+söe
+[d©a->
+right_pha£
+];
+
+101 
+d©a
+->
+À·_pha£
+ += 1;
+
+102 if–
+d©a
+->
+À·_pha£
+ >
+sw_duøti⁄_Àngth
+ ) data->left_phase -= sw_duration_length;
+
+103 
+d©a
+->
+right_pha£
+ += 1;
+
+104 if–
+d©a
+->
+right_pha£
+ >
+sw_duøti⁄_Àngth
+ ) data->right_phase -= sw_duration_length;
+
+107  
+∑C⁄töue
+;
+
+108 
+	}
+}
+
+113 
+	$SåómFöished
+–* 
+u£rD©a
+ )
+
+115 
+∑Te°D©a
+ *
+d©a
+ = (∑Te°D©®*Ë
+u£rD©a
+;
+
+116 
+	`¥ötf
+–"Såóm Com∂ëed: %s\n", 
+d©a
+->
+mesßge
+ );
+
+117 
+	}
+}
+
+120 
+maö
+();
+
+121 
+	$maö
+()
+
+123 
+PaSåómP¨amëîs
+ 
+ouçutP¨amëîs
+;
+
+124 
+PaSåóm
+ *
+°ªam
+;
+
+125 
+PaEº‹
+ 
+îr
+;
+
+126 
+∑Te°D©a
+ 
+d©a
+;
+
+128 
+	`¥ötf
+("P‹tAudiÿTe°: ouçuàsöêwave. SR = %d, BufSizê%d\n", 
+SAMPLE_RATE
+, 
+FRAMES_PER_BUFFER
+);
+
+132 
+x
+=0;
+
+133 
+x
+<=
+begö_ømp
+)
+
+136 
+adju°_amp
+ = ((
+x
+)/
+begö_ømp
+);
+
+140 
+d©a
+.
+söe
+[
+x
+] = ((
+	`sö
+(
+‰eqc
+ * (2 * 
+pi
+Ë* x / 
+SAMPLE_RATE
+))*
+adju°_amp
+);
+
+143 
+x
+++;
+
+146 
+x
+ < ((
+sw_duøti⁄_Àngth
+Ë- 
+íd_ømp
+))
+
+149 
+d©a
+.
+söe
+[
+x
+] = (
+	`sö
+(
+‰eqc
+ * (2 * 
+pi
+Ë* x / 
+SAMPLE_RATE
+));
+
+153 
+x
+++;
+
+156 
+x
+<=
+sw_duøti⁄_Àngth
+)
+
+159 
+adju°_amp
+ = (((
+sw_duøti⁄_Àngth
+-
+x
+))/
+íd_ømp
+);
+
+160 
+d©a
+.
+söe
+[
+x
+] = (
+	`sö
+(
+‰eqc
+ * (2 * 
+pi
+Ë* x / 
+SAMPLE_RATE
+))*
+adju°_amp
+;
+
+163 
+x
+++;
+
+165 
+d©a
+.
+À·_pha£
+ = d©a.
+right_pha£
+ = 0;
+
+173 
+îr
+ = 
+	`Pa_Inôülize
+();
+
+174 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+176 
+ouçutP¨amëîs
+.
+devi˚
+ = 
+	`Pa_GëDeÁu…OuçutDevi˚
+();
+
+177 i‡(
+ouçutP¨amëîs
+.
+devi˚
+ =
+∑NoDevi˚
+) {
+
+178 
+	`Ârötf
+(
+°dîr
+,"Error: No default output device.\n");
+
+179 
+îr‹
+;
+
+181 
+ouçutP¨amëîs
+.
+ch™√lCou¡
+ = 2;
+
+182 
+ouçutP¨amëîs
+.
+ßm∂eF‹m©
+ = 
+∑Flﬂt32
+;
+
+183 
+ouçutP¨amëîs
+.
+sugge°edL©ícy
+ = 
+	`Pa_GëDevi˚Info
+–ouçutP¨amëîs.
+devi˚
+ )->
+deÁu…LowOuçutL©ícy
+;
+
+184 
+ouçutP¨amëîs
+.
+ho°ApiS≥cificSåómInfo
+ = 
+NULL
+;
+
+186 
+îr
+ = 
+	`Pa_O≥nSåóm
+(
+
+187 &
+°ªam
+,
+
+188 
+NULL
+,
+
+189 &
+ouçutP¨amëîs
+,
+
+190 
+SAMPLE_RATE
+,
+
+191 
+FRAMES_PER_BUFFER
+,
+
+192 
+∑ClùOff
+,
+
+193 
+∑ã°CÆlback
+,
+
+194 &
+d©a
+ );
+
+195 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+197 
+	`•rötf
+–
+d©a
+.
+mesßge
+, "No Message" );
+
+198 
+îr
+ = 
+	`Pa_SëSåómFöishedCÆlback
+–
+°ªam
+, &
+SåómFöished
+ );
+
+199 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+201 
+îr
+ = 
+	`Pa_SèπSåóm
+–
+°ªam
+ );
+
+202 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+205 
+	`Pa_SÀï
+( 1500 );
+
+207 
+îr
+ = 
+	`Pa_St›Såóm
+–
+°ªam
+ );
+
+208 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+210 
+îr
+ = 
+	`Pa_Clo£Såóm
+–
+°ªam
+ );
+
+211 if–
+îr
+ !
+∑NoEº‹
+ ) 
+îr‹
+;
+
+213 
+	`Pa_Tîmö©e
+();
+
+214 
+	`¥ötf
+("Test finished.\n");
+
+216  
+îr
+;
+
+217 
+îr‹
+:
+
+218 
+	`Pa_Tîmö©e
+();
+
+219 
+	`Ârötf
+–
+°dîr
+, "AnÉrror occured while usingÅheÖortaudio stream\n" );
+
+220 
+	`Ârötf
+–
+°dîr
+, "Eº‹Çumbî: %d\n", 
+îr
+ );
+
+221 
+	`Ârötf
+–
+°dîr
+, "Eº‹ mesßge: %s\n", 
+	`Pa_GëEº‹Text
+–
+îr
+ ) );
+
+222  
+îr
+;
+
+223 
+	}
+}
+
+	@
+1
+.
+0
+1
+12
+..\main.cpp
