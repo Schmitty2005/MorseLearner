@@ -3,9 +3,7 @@
 //	It will be used later in making a complete morse dit or dah.
 //
 //		November 18th, 2013
-//
-//		Brian Schmitt
-//
+
 int SineGen (double freq, double sample_rate)
 {
 	int slice_count;		//variable to be used for number of 'slices'/samples in sample wave
